@@ -4,7 +4,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { FiArchive, FiEdit2 } from "react-icons/fi";
 import { HiOutlineDuplicate } from "react-icons/hi";
 import { RiExternalLinkLine } from "react-icons/ri";
-import Button from "../Button";
+import Button from "../button/Button";
 import { Link } from "react-router-dom";
 
 const MenuDropDown = () => {

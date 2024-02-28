@@ -2,7 +2,8 @@ import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
 import Allpages from "../Allpages";
 import MenuDropDown from "../pages/MenuDropDown";
 import LIstbox from "../pages/LIstbox";
-import { Combobox } from "@headlessui/react";
+import Combox from "../pages/Combox";
+import Conver from "../pages/Conver";
 
 const Navbar = () => {
   return (
@@ -31,7 +32,8 @@ const Navbar = () => {
             <Route index element={<Allpages />} />
             <Route path="/dropmenu" element={<MenuDropDown />} />
             <Route path="/listbox" element={<LIstbox />} />
-            <Route path="/combobox" element={<Combobox />} />
+            <Route path="/combox" element={<Combox />} />
+            <Route path="/conversation" element={<Conver />} />
           </Routes>
         </div>
       </BrowserRouter>

@@ -4,7 +4,7 @@ import { listBoxes } from "../store/ListStore";
 import { IoCheckmark } from "react-icons/io5";
 import { HiMiniChevronUpDown } from "react-icons/hi2";
 import { Link } from "react-router-dom";
-import Button from "../Button";
+import Button from "../button/Button";
 
 const LIstbox = () => {
   const [slected, setSelected] = useState<string | null>(listBoxes[0].title);
@@ -19,7 +19,7 @@ const LIstbox = () => {
   return (
     <div className="bg-gradient-to-r from-listboxbody to-listboxbod py-20 px-10 h-[100vh] w-full  cursor-default duration-400">
       <Link to={"/"}>
-        <Button>Back</Button>
+        <Button >Back</Button>
       </Link>
       <div className="flex flex-col  justify-center pt-20 gap-1 items-center">
         <div

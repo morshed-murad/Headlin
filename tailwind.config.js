@@ -8,6 +8,8 @@ export default {
   theme: {
     extend: {
       colors: {
+        greenbg: "#2ED5C0",
+        greenlightbg: "#21D2ED",
         listboxbody: "#FCD14B",
         listboxbod: "#f97517",
         indigo: {

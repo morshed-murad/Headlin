@@ -1,6 +1,7 @@
 import MenuDrop from "../images/MenuDropdown.png";
 import ListBox from "../images/listbox.png";
 import combobox from "../images/combobox.png";
+import convImg from "../images/conversation.jpg";
 export interface Image {
   src: string;
   alt: string;
@@ -28,15 +29,15 @@ export const imageList: Image[] = [
     id: 3,
     src: combobox,
     alt: "combobox",
-    path: "/combobox",
+    path: "/combox",
     title: "Combobox (Autocomplete)",
   },
   {
     id: 4,
-    src: MenuDrop,
-    alt: "dropdowun",
-    path: "/dropmenu",
-    title: "Menu DropDwon ",
+    src: convImg,
+    alt: "Conversation",
+    path: "/conversation",
+    title: "English Conversation",
   },
   {
     id: 5,
