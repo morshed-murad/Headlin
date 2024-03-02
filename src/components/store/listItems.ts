@@ -1,7 +1,6 @@
 import { create } from "zustand";
 import { listBoxes } from "./ListStore";
 
-
 export interface ListItem {
   id: number;
   title: string;

@@ -33,19 +33,22 @@ const Conver = () => {
           name=""
           id=""
         />
-        <button onClick={handleAdds} className="px-4 py-2 bg-red-600 rounded">
+        <button
+          onClick={handleAdds}
+          className="px-4 py-2 bg-blue-600 text-white rounded"
+        >
           Adds itmes
         </button>
       </div>
-      <ul className="flex flex-col bg-yellow-200 gap-2 text-black">
+      <ul className="flex flex-col justify-center w-full  items-baseline gap-2 text-black">
         {items.map((item) => (
-          <div>
+          <div className="flex justify-between px-10 py-2 items-center bg-indigo-700 w-full">
             <li key={item.id}>{item.title}</li>
             <button
               onClick={() => handleRemove(item.id)}
-              className="px-4 py-2 bg-red-600 rounded"
+              className="px-4 py-2 bg-white rounded"
             >
-              Adds itmes
+              <span className="text-xl">❌</span>
             </button>
           </div>
         ))}
