@@ -19,7 +19,7 @@ const LIstbox = () => {
   return (
     <div className="bg-gradient-to-r from-listboxbody to-listboxbod py-20 px-10 h-[100vh] w-full  cursor-default duration-400">
       <Link to={"/"}>
-        <Button >Back</Button>
+        <Button>Back</Button>
       </Link>
       <div className="flex flex-col  justify-center pt-20 gap-1 items-center">
         <div

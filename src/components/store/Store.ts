@@ -2,6 +2,8 @@ import MenuDrop from "../images/MenuDropdown.png";
 import ListBox from "../images/listbox.png";
 import combobox from "../images/combobox.png";
 import convImg from "../images/conversation.jpg";
+import switchimg from "../images/switchtoggle.png";
+import disclosureimg from "../images/disclosure.png";
 export interface Image {
   src: string;
   alt: string;
@@ -41,17 +43,17 @@ export const imageList: Image[] = [
   },
   {
     id: 5,
-    src: MenuDrop,
-    alt: "dropdowun",
-    path: "/dropmenu",
-    title: "Menu DropDwon ",
+    src: switchimg,
+    alt: "switch",
+    path: "/switch",
+    title: "Switch (Toggle) ",
   },
   {
     id: 6,
-    src: MenuDrop,
+    src: disclosureimg,
     alt: "dropdowun",
-    path: "/dropmenu",
-    title: "Menu DropDwon ",
+    path: "/disclosure",
+    title: "disclosure ",
   },
   {
     id: 7,

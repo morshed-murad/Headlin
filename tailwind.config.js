@@ -8,6 +8,10 @@ export default {
   theme: {
     extend: {
       colors: {
+        radiofirstcol: "#10766E",
+        radiosecondcol: "#134E4A",
+        darkgreen: "#08B8D3",
+        lighgreen: "#4ADE80",
         greenbg: "#2ED5C0",
         greenlightbg: "#21D2ED",
         listboxbody: "#FCD14B",

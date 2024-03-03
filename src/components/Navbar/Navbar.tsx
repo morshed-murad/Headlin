@@ -4,6 +4,8 @@ import MenuDropDown from "../pages/MenuDropDown";
 import LIstbox from "../pages/LIstbox";
 import Combox from "../pages/Combox";
 import Conver from "../pages/Conver";
+import Disclosure from "../pages/Disclosure";
+import Switch from "../pages/Switch";
 
 const Navbar = () => {
   return (
@@ -34,6 +36,8 @@ const Navbar = () => {
             <Route path="/listbox" element={<LIstbox />} />
             <Route path="/combox" element={<Combox />} />
             <Route path="/conversation" element={<Conver />} />
+            <Route path="/switch" element={<Switch />} />
+            <Route path="/disclosure" element={<Disclosure />} />
           </Routes>
         </div>
       </BrowserRouter>

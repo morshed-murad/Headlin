@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { listBoxes } from "./ListStore";
+import { listBoxes } from "./lItemslist";
 
 export interface ListItem {
   id: number;
