@@ -4,6 +4,7 @@ import combobox from "../images/combobox.png";
 import convImg from "../images/conversation.jpg";
 import switchimg from "../images/switchtoggle.png";
 import disclosureimg from "../images/disclosure.png";
+import Dialog from "../images/Dialogmodel.png";
 export interface Image {
   src: string;
   alt: string;
@@ -57,9 +58,9 @@ export const imageList: Image[] = [
   },
   {
     id: 7,
-    src: MenuDrop,
-    alt: "dropdowun",
-    path: "/dropmenu",
-    title: "Menu DropDwon ",
+    src: Dialog,
+    alt: "Dialog (Modal)",
+    path: "/dialog",
+    title: "Dialog (Modal)",
   },
 ];

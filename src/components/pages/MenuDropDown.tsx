@@ -5,7 +5,7 @@ import { FiArchive, FiEdit2 } from "react-icons/fi";
 import { HiOutlineDuplicate } from "react-icons/hi";
 import { RiExternalLinkLine } from "react-icons/ri";
 import Button from "../button/Button";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const MenuDropDown = () => {
   const [rotated, setRotated] = useState(false);
@@ -15,9 +15,9 @@ const MenuDropDown = () => {
 
   return (
     <div className="py-20 px-10 bg-gradient-to-r from-purple-500 to-indigo-500 h-[100vh]">
-      <Link to={"/"}>
+      <NavLink to={"/"}>
         <Button>Back</Button>
-      </Link>
+      </NavLink>
       <div className="flex flex-col  items-center gap-3">
         <button
           onClick={handleRote}

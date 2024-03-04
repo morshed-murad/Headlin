@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Button from "../button/Button";
 import { FaCircle } from "react-icons/fa";
 import { useState } from "react";
@@ -10,9 +10,9 @@ const Switch = () => {
   };
   return (
     <div className="bg-gradient-to-r from-lighgreen to-darkgreen py-20 px-10 h-[100vh]">
-      <Link to={"/"}>
+      <NavLink to={"/"}>
         <Button children="Back" />
-      </Link>
+      </NavLink>
       <div className="flex justify-center">
         <div
           onClick={handleChange}

@@ -8,6 +8,10 @@ export default {
   theme: {
     extend: {
       colors: {
+        dialogfirstbg: "#2C8CBA",
+        dialogsecondbg: "#4A4DB4",
+        disbgfirst: "#D746EE",
+        disbgsecond: "#9433EA",
         radiofirstcol: "#10766E",
         radiosecondcol: "#134E4A",
         darkgreen: "#08B8D3",

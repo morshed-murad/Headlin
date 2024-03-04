@@ -6,6 +6,7 @@ import Combox from "../pages/Combox";
 import Conver from "../pages/Conver";
 import Disclosure from "../pages/Disclosure";
 import Switch from "../pages/Switch";
+import DialogModal from "../pages/DialogModal";
 
 const Navbar = () => {
   return (
@@ -38,6 +39,7 @@ const Navbar = () => {
             <Route path="/conversation" element={<Conver />} />
             <Route path="/switch" element={<Switch />} />
             <Route path="/disclosure" element={<Disclosure />} />
+            <Route path="/dialog" element={<DialogModal />} />
           </Routes>
         </div>
       </BrowserRouter>

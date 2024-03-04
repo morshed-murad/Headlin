@@ -4,7 +4,7 @@ import { IoCheckmark } from "react-icons/io5";
 import { useState } from "react";
 import { Lists, listBoxes } from "../store/ListStore";
 import Button from "../button/Button";
-import { Link } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 
 const Combox = () => {
   const [filteredOptions, setFilteredOptions] = useState<Lists[]>([]);
@@ -39,9 +39,9 @@ const Combox = () => {
 
   return (
     <div className="h-[100vh] justify-center py-20 px-10 bg-gradient-to-r from-greenbg to-greenlightbg">
-      <Link to={"/"}>
+      <NavLink to={"/"}>
         <Button children={"Back"} />
-      </Link>
+      </NavLink>
       <div className="flex justify-center">
         <div className="flex flex-col gap-2 items-start  mt-20">
           <div className="flex bg-white py-1 px-1 rounded-lg">

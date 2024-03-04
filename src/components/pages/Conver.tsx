@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useListStore } from "../store/listItems";
 import Button from "../button/Button";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Conver = () => {
   const { items, addItems } = useListStore();
@@ -22,9 +22,9 @@ const Conver = () => {
   };
   return (
     <div className="py-20 px-10 bg-gradient-to-r from-greenbg to-greenlightbg h-[100vh]">
-      <Link to={"/"}>
+      <NavLink to={"/"}>
         <Button children={"Back"} />
-      </Link>
+      </NavLink>
       <div className="flex flex-col gap-10">
         <div className="flex justify-start mt-10">
           <div className="flex items-center gap-4 py-2 px-3 rounded-lg bg-white justify-self-start">
