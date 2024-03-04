@@ -8,7 +8,9 @@ import { Link } from "react-router-dom";
 
 const Combox = () => {
   const [filteredOptions, setFilteredOptions] = useState<Lists[]>([]);
-  const [selectedOption, setSelectedOption] = useState<Lists>(listBoxes[0]);
+  const [selectedOption, setSelectedOption] = useState<Lists | null>(
+    listBoxes[0]
+  );
   const [selected, setSelected] = useState(listBoxes[0].title);
   const [show, setShow] = useState(false);
   const handleClick = () => {
