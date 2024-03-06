@@ -1,21 +1,21 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { imageList } from "./store/Store";
 
-const Allpages = () => {
+const Pages = () => {
   return (
-    <div className="bg-blue-400 py-24 grid sm:grid-cols-2 lg:grid-cols-3 px-10 gap-3 justify-center items-center">
+    <div className="bg-blue-400 py-20 grid sm:grid-cols-2 lg:grid-cols-3 px-10 gap-3 justify-center items-center">
       {imageList.map((image) => (
-        <Link key={image.id} to={image.path}>
+        <NavLink key={image.id} to="/form">
           <div>
             <img className="rounded-md" src={image.src} alt={image.alt} />
             <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-indigo-600">
               {image.title}
             </span>
           </div>
-        </Link>
+        </NavLink>
       ))}
     </div>
   );
 };
 
-export default Allpages;
+export default Pages;
