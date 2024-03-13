@@ -23,9 +23,9 @@ const Navbarlayout = () => {
   const Routers = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Navbar />}>
-        <Route index element={<Pages />} />
+        <Route path="home" element={<Pages />} />
         <Route element={<ProductRouts />}>
-          <Route path="pages" element={<Allpages />} />
+          <Route index element={<Allpages />} />
           <Route path="dropmenu" element={<MenuDropDown />} />
           <Route path="listbox" element={<LIstbox />} />
           <Route path="combox" element={<Combox />} />

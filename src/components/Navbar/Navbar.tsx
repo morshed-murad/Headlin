@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import { UserContexts } from "../../App";
 
@@ -16,18 +16,30 @@ const Navbar = () => {
           </h1>
           <nav>
             <div className="nav flex gap-2">
-              <NavLink
-                className={({ isActive }) => (isActive ? "bg-red-400" : "")}
-                to="/"
-              >
-                Home
-              </NavLink>
-              <NavLink
-                className={({ isActive }) => (isActive ? "bg-red-400" : "")}
-                to="form"
-              >
-                Login
-              </NavLink>
+              {user?.isLoggedIn === false ? (
+                <div className="nav flex gap-2">
+                  <NavLink
+                    className={({ isActive }) => (isActive ? "bg-red-400" : "")}
+                    to="home"
+                  >
+                    Home
+                  </NavLink>
+                  <NavLink
+                    className={({ isActive }) => (isActive ? "bg-red-400" : "")}
+                    to="form"
+                  >
+                    Login
+                  </NavLink>
+                </div>
+              ) : (
+                <NavLink
+                  className={({ isActive }) => (isActive ? "bg-red-400" : "")}
+                  to="/"
+                >
+                  Home
+                </NavLink>
+              )}
+
               <button
                 onClick={() => {
                   if (!user?.isLoggedIn) return;

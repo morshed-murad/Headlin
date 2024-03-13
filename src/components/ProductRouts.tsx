@@ -7,9 +7,8 @@ const ProductRouts = () => {
   const location = useLocation();
   if (user && user.isLoggedIn) {
     return <Outlet />;
-  } else {
-    return <Navigate to="/" replace state={{ from: location }} />;
   }
+  return <Navigate to="/home" replace state={{ from: location }} />;
 };
 
 export default ProductRouts;
