@@ -11,7 +11,7 @@ function App() {
   const [user, setUser] = useState({ isLoggedIn: false });
   return (
     <UserContexts.Provider value={{ user, setUser }}>
-      <div>
+      <div className="scroll  overflow-y-hidden">
         <Navbarlayout />
       </div>
     </UserContexts.Provider>

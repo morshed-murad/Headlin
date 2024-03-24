@@ -3,7 +3,7 @@ import { imageList } from "./store/Store";
 
 const Pages = () => {
   return (
-    <div className="bg-blue-400 py-20 grid sm:grid-cols-2 lg:grid-cols-3 px-10 gap-3 justify-center items-center">
+    <div className="bg-blue-400 py-36 grid sm:grid-cols-2 lg:grid-cols-3 px-10 gap-3 justify-center items-center">
       {imageList.map((image) => (
         <NavLink key={image.id} to="/form">
           <div>

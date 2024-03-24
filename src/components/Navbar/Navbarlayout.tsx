@@ -18,12 +18,14 @@ import Switch from "../pages/Switch";
 import Disclosure from "../pages/Disclosure";
 import Notfonund from "../Notfonund";
 import ProductRouts from "../ProductRouts";
+import About from "../footers/About";
 
 const Navbarlayout = () => {
   const Routers = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Navbar />}>
         <Route path="home" element={<Pages />} />
+        <Route path="about" element={<About />} />
         <Route element={<ProductRouts />}>
           <Route index element={<Allpages />} />
           <Route path="dropmenu" element={<MenuDropDown />} />

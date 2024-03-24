@@ -3,7 +3,7 @@ import { imageList } from "./store/Store";
 
 const Allpages = () => {
   return (
-    <div className="bg-blue-400 py-24 grid sm:grid-cols-2 lg:grid-cols-3 px-10 gap-3 justify-center items-center">
+    <div className="bg-blue-400 py-36 grid sm:grid-cols-2 lg:grid-cols-3 px-10 gap-3 justify-center items-center">
       {imageList.map((image) => (
         <Link key={image.id} to={image.path}>
           <div>
